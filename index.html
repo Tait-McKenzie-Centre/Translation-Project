@@ -1,0 +1,153 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translation Project</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    
+
+</head>
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <!--MAIN page-->
+
+        <nav class ="navbar">
+            <div class = "main-logo"><svg  fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M28.3179 40.5713L32.5581 40.5679L34.2809 45.8464L38.24 40.5635L42.2893 40.5609L35.4146 49.3015L34.2115 54.9843L30.3521 54.9869L31.5336 49.41L28.3179 40.5713Z" fill="black"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M36.0033 54.4812L37.8771 45.6391L41.7347 45.6356L39.8714 54.4361C39.5261 56.0687 40.0917 57.0012 41.7243 57.0004C43.3569 56.9986 44.318 56.0652 44.6633 54.4327L46.5266 45.6322L50.386 45.6296L48.5123 54.4726C47.6916 58.3528 44.6364 60.2638 41.0321 60.2673C37.4277 60.269 35.1818 58.3623 36.0033 54.4812Z" fill="black"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M71.8223 33.9456C71.7894 32.0224 71.1995 31.8854 71.0295 31.8992C70.9739 31.9122 70.9212 31.9354 70.8742 31.9678L70.5897 32.2107L69.311 33.1692C69.1358 33.3002 68.5511 33.9109 68.4939 34.1217C68.2761 34.9345 67.4269 37.3244 68.3481 37.9039C68.5242 38.0149 68.8634 38.0192 69.1419 38.0531L68.8886 39.0706C68.8007 39.4202 68.7449 39.777 68.722 40.1367C68.6821 41.2601 68.7983 41.4969 68.7983 41.4969C68.7983 41.4969 70.3459 38.9362 70.6226 38.3003C70.6868 38.1528 70.7319 38.0435 70.764 37.9603C71.2724 36.8169 71.8449 35.2017 71.8223 33.9447M68.5069 47.5996C68.3325 47.433 68.0306 47.4009 67.3705 47.5128C67.5527 46.3565 67.6472 44.9321 67.2664 44.1627C66.9827 44.9269 65.9981 46.6818 65.0942 47.8269C64.003 47.9171 62.759 47.957 61.4994 47.95C61.7423 46.6983 61.8785 44.9963 61.4786 44.0525C61.1794 44.8592 60.2269 46.707 59.185 47.8867C58.4542 47.8525 57.7244 47.7987 56.9964 47.7254C55.8514 47.6057 54.3836 47.5996 53.6055 48.0585C57.7138 49.6095 60.6979 52.3958 58.9751 56.7748C60.3544 56.5467 60.8376 56.4677 62.0416 56.1502C63.4573 55.7772 65.8073 55.0191 66.4345 53.691C67.6489 51.1146 67.9517 50.2801 68.4756 48.6622C68.6361 48.166 68.7255 47.806 68.5069 47.5996Z" fill="#E31837"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M36.4181 17.0837L34.076 17.3691C34.076 17.3691 31.0381 14.7164 30.2122 11.8034C35.4665 10.6332 40.5716 12.3161 42.2336 14.4405L36.4181 17.0837ZM46.767 22.2773C47.5599 21.5894 48.417 21.0298 49.2914 20.7219C50.3297 20.2448 51.938 20.1164 52.8107 20.3116C56.1817 21.0671 58.549 25.0679 58.9958 25.4201C59.0652 25.4748 58.9567 25.7081 58.8743 25.6777C58.1613 25.4192 56.6909 24.5596 54.9134 23.9202C54.1969 24.1657 53.2193 24.2638 52.1592 24.1562C51.0992 24.0486 50.1632 23.7554 49.5091 23.3711C49.085 23.4748 48.6737 23.6249 48.2825 23.8188C46.3454 24.7816 44.6643 26.5539 43.3674 28.2541C41.8207 30.0212 39.4725 32.8474 36.6385 34.663C36.6385 34.663 40.523 36.9965 48.6356 36.2253C48.6356 36.2253 51.0957 36.2253 53.967 42.4798C54.8015 44.2962 57.2582 41.9029 58.7659 40.1549C59.1892 39.8513 59.6368 39.5486 60.1026 39.2649C60.5815 40.6832 60.4739 42.8649 60.4739 42.8649C61.1471 41.915 61.822 40.8324 62.1655 39.7108C62.2575 39.4089 62.4778 38.6195 62.4153 38.1563C63.3869 37.8319 64.4044 37.687 65.4411 37.857C67.5317 38.2014 66.8307 35.7135 66.7709 34.8434C66.7561 34.6121 66.681 34.3886 66.553 34.1953C66.425 34.0021 66.2486 33.8457 66.0414 33.7417C66.0414 33.7417 63.7122 32.7789 63.0807 32.241C62.5402 31.7804 61.2269 29.6907 61.6259 29.8026C63.7842 30.4055 69.146 30.9389 70.0404 31.0257C70.1247 31.0327 70.209 31.0114 70.2798 30.965C70.7326 30.67 70.8784 30.5113 70.6676 29.8373C70.3128 28.6974 64.9423 23.2722 63.9525 22.5817C63.9494 22.569 63.9492 22.5557 63.9521 22.5429C63.9549 22.5302 63.9607 22.5182 63.969 22.508C64.2812 22.1437 64.5892 21.3282 64.296 20.9483C63.3171 19.9569 62.3334 18.9703 61.3449 17.9885C61.3605 17.0976 61.1297 15.7617 59.7574 14.5602L58.3842 13.3597C58.0025 8.42897 55.2995 4.61991 53.5489 3.6787C53.6174 4.15755 53.5723 5.64005 52.8879 6.4841C50.0365 2.10511 44.7163 -0.108669 41.6125 0.00410192C42.6682 0.838608 44.3971 2.47899 44.8595 4.18097C38.1609 0.515909 29.2736 -0.0809102 23.0201 3.13567C26.4743 3.13567 29.8427 4.39003 30.9479 6.09634C25.2061 4.89403 19.4452 7.57972 14.7019 9.44998C9.95769 11.3202 7.06121 11.0921 6.30911 10.9785C8.28607 12.9494 13.0372 14.7415 14.4963 15.0148C11.8739 16.3958 9.64366 17.3717 7.34313 18.1611C5.00096 18.9644 1.91537 19.5751 0 19.7807C1.04877 19.8943 3.97561 21.6605 8.32424 23.2245C12.868 24.858 17.0987 25.244 20.4289 25.198C18.5092 26.3708 12.8889 28.7165 11.2008 28.8535C11.7776 29.1112 14.2109 30.1721 17.64 30.8071C21.8464 31.5843 26.7294 30.6362 29.2147 30.4081C26.751 33.5327 23.8329 34.5363 22.8058 34.696C29.3795 36.5393 35.2427 33.7244 37.4088 32.3208C38.6709 31.5037 43.0152 25.9892 44.5524 24.3115C44.804 24.0365 45.321 23.6106 45.6315 23.3156L46.7679 22.2773H46.767Z" fill="#E31837"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M42.951 14.752C41.8423 14.0754 37.1728 13.1454 34.8913 14.5585C36.0225 14.7216 36.7997 15.2976 36.7997 15.2976C35.6304 15.4217 32.8588 16.6535 30.4568 18.6235C28.0539 20.5953 33.1052 20.9032 33.1052 20.9032L44.4161 15.7019L42.9501 14.752" fill="#E31837"/>
+                </svg></div>
+            <a href = "#" class ="toggle-button">
+                <span class = "bar"></span>
+                <span class = "bar"></span>
+                <span class = "bar"></span>
+            </a>
+            <div class = "navbar-links">
+                <ul>
+                    <li><button onclick=" window.open('https://reconline.yorkulions.ca/','_blank')" type="button"class="nav-btn">YORK RECREATION</button></li>
+                    <li><button onclick=" window.open('https://yorkulions.ca/','_blank')" type="button"class="nav-btn">YORK LIONS</a></button></li>
+                    <li><button onclick=" window.open('https://reconline.yorkulions.ca/home/signin?redirect=%252Fmembership%252Findex','_blank')" type="button"class="nav-btn-1">Sign Up</a></button></li>
+                    <li><button onclick=" window.open('mailto:taitmck@yorku.ca','_blank')" type="button"class="nav-btn-2">Contact Us</a></button></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="head">
+            <div class="head1">
+                CHOOSE YOUR LANGUAGE
+            </div>
+            <div class="head2">
+                Translation for our Documentation
+            </div>
+
+        </div>
+
+        <div class="cards">
+            <div class="card text-center border-dark" style="width: 18rem;">
+                <img class="card-img-top" src="./assets/logo/pdflogo.svg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Chinese</h5>
+                  <p class="card-text">中文</p>
+                  <a href="/assets/translations/Chinese.docx" download class="btn btn-primary">Download PDF</a>
+                </div>
+              </div>
+
+              <div class="card text-center border-dark" style="width: 18rem;">
+                <img class="card-img-top" src="./assets/logo/pdflogo.svg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Punjabi</h5>
+                    <p class="card-text">ਪੰਜਾਬੀ</p>
+                  <a href="/assets/translations/Punjabi.docx" download class="btn btn-primary">Download PDF</a>
+                </div>
+              </div>
+
+              <div class="card text-center border-dark" style="width: 18rem;">
+                <img class="card-img-top" src="./assets/logo/pdflogo.svg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Italian</h5>
+                    <p class="card-text">Italiano</p>
+                  <a href="/assets/translations/Italian.docx" download class="btn btn-primary">Download PDF</a>
+                </div>
+              </div>
+
+              <div class="card text-center border-dark" style="width: 18rem;">
+                <img class="card-img-top" src="./assets/logo/pdflogo.svg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Spanish</h5>
+                    <p class="card-text">Español</p>
+                  <a href="/assets/translations/Spanish.docx" download class="btn btn-primary">Download PDF</a>
+                </div>
+              </div>
+
+
+              <div class="card text-center border-dark" style="width: 18rem;">
+                <img class="card-img-top" src="./assets/logo/pdflogo.svg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Hindi</h5>
+                    <p class="card-text">हिन्दी</p>
+                  <a href="/assets/translations/Hindi.docx" download class="btn btn-primary">Download PDF</a>
+                </div>
+              </div>
+
+          </div>
+
+          <div class="footer-section" >
+            <div class="head3">
+                Get in Touch!
+            </div>
+            <div class="contact-info ">
+                For any enquiry, please email us. 
+            </div>
+          
+            <div class="contact-button">
+              <button onclick=" window.open('mailto:taitmck@yorku.ca','_blank')" type="button"class="nav-btn-2">Contact Us</a></button>
+            </div>
+          <div class="social-btn"> 
+    
+            <div class="icon">
+          
+              <svg onclick=" window.open('mailto:taitmck@yorku.ca')" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-envelope" viewBox="0 0 16 16">
+                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+              </svg>
+           
+            </div>
+
+            <div class="icon">
+              
+              <svg onclick=" window.open('https://www.facebook.com/yorkurecreation/','_blank')" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-facebook" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+              </svg>
+            </div>
+
+            <div class="icon">
+              <svg onclick=" window.open('https://www.instagram.com/yorkurecreation/?hl=en','_blank')" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+              </svg>
+            </div>
+
+            <div class="icon">
+              <svg onclick=" window.open('https://twitter.com/YorkURecreation?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor','_blank')" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-twitter" viewBox="0 0 16 16">
+                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+              </svg>
+            </div>
+
+            <div class="icon">
+              <svg onclick=" window.open('https://www.youtube.com/user/yorkulions/featured','_blank')" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-youtube" viewBox="0 0 16 16">
+                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+              </svg>
+            </div>
+        </div>
+        <div class="footer">
+          © 2022 YORK UNIVERSITY ATHLETICS & RECREATION
+        </div>
+
+    </body>
+</html>
